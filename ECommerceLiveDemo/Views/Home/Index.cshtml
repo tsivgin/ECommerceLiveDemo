@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+      <!-- Sidebar -->
+      <!-- Sol menu -->
+      <ul class="sidebar navbar-nav">
+         <!-- Sol Menu Üst Başlangıç -->
+         @Html.Partial("PartialViewLayout/_LeftTopBarPartial")
+         <!-- Sol Menu Üst Bitiş -->
+      
+         <!-- Sol Menu Alt Başlangıç -->
+         @Html.Partial("PartialViewLayout/_LeftBottomBarPartial")
+         <!-- Sol Menu Alt Bitiş -->
+      </ul>
+      <!-- Sol Menu Bitiş -->
+      
+            <div class="container-fluid pb-0">
+            
+            <div class="top-mobile-search">
+               <div class="row">
+                  <div class="col-md-12">   
+                     <form class="mobile-search">
+                           
+                        <!-- Search Bar Başlangıç -->
+                        <div class="input-group">
+                           <input type="text" placeholder="Search for..." class="form-control">
+                           <div class="input-group-append">
+                              <button type="button" class="btn btn-dark"><i class="fas fa-search"></i></button>
+                           </div>
+                        </div>
+                        <!-- Search Bar Bitiş -->
+                     </form>   
+                  </div>
+               </div>
+            </div>
+            
+               <div class="top-category section-padding mb-4">
+                  @Html.Partial("PartialViewLayout/_TopCategoryMenuPartial")
+               </div>
+               <hr>
+               
+            <!-- Videolar Başlangıç -->
+               <div class="video-block section-padding">
+                  @Html.Partial("_VideosPartial")
+               </div>
+            <hr class="mt-0">
+            <!-- Videolar Bitiş-->
+            
+               <!-- Popular Channel Başlangıç -->
+               <div class="video-block section-padding">
+                  @Html.Partial("PartialViewLayout/_PopularChannelsPartial")
+               </div>
+               <!-- Popular Kanallar Bitiş-->
+            </div>
+            <!-- /.container-fluid -->
+           
+         
+      
