@@ -24,6 +24,8 @@ namespace ECommerceLiveDemo.Models
         public string ContactEmail { get; set; }
         [DisplayName("Marka Mı? Değil Influencer")]
         public bool IsBrand { get; set; }
+        [DisplayName("Resim")]
+        public string ImageLink { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<BrandUserMapping> BrandUserMappings { get; set; }

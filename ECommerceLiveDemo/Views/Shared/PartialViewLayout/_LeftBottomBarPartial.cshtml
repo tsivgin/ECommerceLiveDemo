@@ -1,12 +1,20 @@
+@model ECommerceLiveDemo.Models.DTOs.BrandsDto
+
 <li class="nav-item channel-sidebar-list">
-    <h6>SUBSCRIPTIONS</h6>
+    
     <ul>
-        <li>
-            <a href="subscriptions.html">
-                <img class="img-fluid" alt="" src="img/s1.png"> Your Life
-            </a>
-        </li>
-        <li>
+        <h6>Influencer   |   Brands</h6>
+        @{
+            foreach (var item in Model.Influencers)
+            {
+                   <li>
+                        <a href="#">
+                            <img alt="" src=@item.ImageLink> @item.Name
+                        </a>
+                    </li>
+            }
+        }
+        @*<li>
             <a href="subscriptions.html">
                 <img class="img-fluid" alt="" src="img/s1.png"> Unboxing <span class="badge badge-warning">2</span>
             </a>
@@ -20,6 +28,6 @@
             <a href="subscriptions.html">
                 <img class="img-fluid" alt="" src="img/s1.png"> Gaming
             </a>
-        </li>
+        </li>*@
     </ul>
 </li>

@@ -147,6 +147,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideoCommentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fVmlkZW9Db21tZW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideoPlayingPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fVmlkZW9QbGF5aW5nUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideosPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fVmlkZW9zUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -171,8 +179,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19Ub3BDYXRlZ29yeU1lbnVQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_TopChoiceMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19Ub3BDaG9pY2VNZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/UploadVideo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXBsb2FkVmlkZW8vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/_ViewImports.cshtml]

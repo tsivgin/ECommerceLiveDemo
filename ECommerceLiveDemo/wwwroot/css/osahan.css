@@ -42,7 +42,7 @@ Version: 1.0
      width: 100%;
 }
  #wrapper #content-wrapper .container-fluid{
-     padding: 30px 30px 30px 255px;
+     padding: 30px 30px 30px 18%;
 }
 .sidebar-toggled #wrapper #content-wrapper .container-fluid{
      padding: 30px 30px 30px 121px;
@@ -224,7 +224,7 @@ Version: 1.0
     .sidebar {
         height: 100%;
         position: fixed;
-        width: 225px !important;
+        width: 17% !important;
     }
     .sidebar:hover {
         overflow: auto;
@@ -234,7 +234,7 @@ Version: 1.0
          width: 100%;
          text-align: left;
          padding: 1rem;
-         width: 225px;
+         width: 100%;
     }
      .sidebar .nav-item .nav-link span {
          display: inline;
@@ -474,9 +474,18 @@ Version: 1.0
 }
  .channel-sidebar-list ul li img {
      border-radius: 50px;
-     height: 28px;
+     height: 50px;
      margin: 0 14px 0 0;
-     width: 28px;
+     width: 50px;
+     border: 2px solid #fff;
+     overflow : hidden;
+     object-fit: cover;
+}
+.channel-sidebar-list ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.5;
+    border-radius: 15px;
+    padding-left:3%
 }
  .channel-sidebar-list li a {
      color: #fff;
@@ -1175,14 +1184,15 @@ Version: 1.0
      font-weight: 600;
 }
  .tags span a {
-     background: #333333 none repeat scroll 0 0;
+    /* background: #333333 none repeat scroll 0 0;*/
      border-radius: 2px;
      color: #fff;
      display: inline-block;
-     padding: 4px 9px;
+     padding: 20px 20px;
 }
  .tags span a:hover {
-     background: #000 none repeat scroll 0 0;
+     /*background: #000 none repeat scroll 0 0;*/
+     color : rgba(255, 255, 255, 0.2);
 }
 /* Footer */
  .app img {

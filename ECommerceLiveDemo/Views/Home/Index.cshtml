@@ -1,6 +1,6 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@model ECommerceLiveDemo.Models.DTOs.BrandsDto
+
+
       <!-- Sidebar -->
       <!-- Sol menu -->
       <ul class="sidebar navbar-nav">
@@ -9,7 +9,7 @@
          <!-- Sol Menu Üst Bitiş -->
       
          <!-- Sol Menu Alt Başlangıç -->
-         @Html.Partial("PartialViewLayout/_LeftBottomBarPartial")
+         @Html.Partial("PartialViewLayout/_LeftBottomBarPartial",Model)
          <!-- Sol Menu Alt Bitiş -->
       </ul>
       <!-- Sol Menu Bitiş -->
@@ -34,14 +34,21 @@
                </div>
             </div>
             
+               
                <div class="top-category section-padding mb-4">
-                  @Html.Partial("PartialViewLayout/_TopCategoryMenuPartial")
+                     @Html.Partial("PartialViewLayout/_TopChoicemenuPartial")
+                    
+                     @Html.Partial("PartialViewLayout/_TopCategoryMenuPartial")
+                     
                </div>
                <hr>
                
             <!-- Videolar Başlangıç -->
                <div class="video-block section-padding">
-                  @Html.Partial("_VideosPartial")
+                  <div class="row">
+                     @Html.Partial("_VideoPlayingPartial")
+                  </div>
+                     @Html.Partial("_VideosPartial")
                </div>
             <hr class="mt-0">
             <!-- Videolar Bitiş-->

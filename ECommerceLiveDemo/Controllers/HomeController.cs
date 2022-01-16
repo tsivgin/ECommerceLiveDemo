@@ -1,6 +1,10 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using ECommerceLiveDemo.Models;
+using ECommerceLiveDemo.Models.DTOs;
+using ECommerceLiveDemo.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace ECommerceLiveDemo.Controllers
@@ -8,15 +12,19 @@ namespace ECommerceLiveDemo.Controllers
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly SHOPContext _context;
+    private readonly IBrandServices _brandServices;
+    public HomeController(ILogger<HomeController> logger,SHOPContext context,IBrandServices brandServices)
     {
         _logger = logger;
+        _context = context;
+        _brandServices = brandServices;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var brandsDto = _brandServices.SetBrandsDto();
+        return View(brandsDto);
     }
 
     public IActionResult Privacy()
