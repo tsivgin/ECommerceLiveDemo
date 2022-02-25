@@ -10,7 +10,7 @@ namespace ECommerceLiveDemo.Models
     {
         public Category()
         {
-            ProductCategoryMappings = new HashSet<ProductCategoryMapping>();
+            VideoCategoryMappings = new HashSet<VideoCategoryMapping>();
         }
 
         public int Id { get; set; }
@@ -21,6 +21,6 @@ namespace ECommerceLiveDemo.Models
         [DisplayName("Kategori Parent Id'si")]
         public int? ParentId { get; set; }
 
-        public virtual ICollection<ProductCategoryMapping> ProductCategoryMappings { get; set; }
+        public virtual ICollection<VideoCategoryMapping> VideoCategoryMappings { get; set; }
     }
 }

@@ -10,8 +10,6 @@ namespace ECommerceLiveDemo.Models
     {
         public Product()
         {
-            ProductCategoryMappings = new HashSet<ProductCategoryMapping>();
-            ProductPictureMappings = new HashSet<ProductPictureMapping>();
             ProductVideoMappings = new HashSet<ProductVideoMapping>();
         }
 
@@ -30,8 +28,10 @@ namespace ECommerceLiveDemo.Models
         public DateTime? UpdateDate { get; set; }
         [DisplayName("Marka İsmi")]
         public virtual Brand Brand { get; set; }
-        public virtual ICollection<ProductCategoryMapping> ProductCategoryMappings { get; set; }
-        public virtual ICollection<ProductPictureMapping> ProductPictureMappings { get; set; }
+        [DisplayName("Resim İsmi")]
+        public string FileName { get; set; }
+        [DisplayName("Resim Url'i")]
+        public string FileUrl { get; set; }
         public virtual ICollection<ProductVideoMapping> ProductVideoMappings { get; set; }
     }
 }

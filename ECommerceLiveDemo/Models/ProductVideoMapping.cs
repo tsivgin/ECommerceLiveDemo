@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ECommerceLiveDemo.Models
 {
-    public partial class ProductVideoMapping
+    public class ProductVideoMapping
     {
         public int Id { get; set; }
         public int? ProductId { get; set; }

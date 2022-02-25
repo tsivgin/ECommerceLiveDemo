@@ -20,11 +20,9 @@ namespace ECommerceLiveDemo.Models
         public virtual DbSet<Brand> Brands { get; set; }
         public virtual DbSet<BrandUserMapping> BrandUserMappings { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Picture> Pictures { get; set; }
         public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<ProductCategoryMapping> ProductCategoryMappings { get; set; }
-        public virtual DbSet<ProductPictureMapping> ProductPictureMappings { get; set; }
         public virtual DbSet<ProductVideoMapping> ProductVideoMappings { get; set; }
+        public virtual DbSet<VideoCategoryMapping> VideoCategoryMapping { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserRole> UserRoles { get; set; }
         public virtual DbSet<UserUserRoleMapping> UserUserRoleMappings { get; set; }
@@ -97,19 +95,6 @@ namespace ECommerceLiveDemo.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Picture>(entity =>
-            {
-                entity.ToTable("Picture");
-
-                entity.Property(e => e.FileName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.FileUrl)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-            });
-
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.ToTable("Product");
@@ -129,35 +114,8 @@ namespace ECommerceLiveDemo.Models
                     .HasConstraintName("FK_Product_Brand");
             });
 
-            modelBuilder.Entity<ProductCategoryMapping>(entity =>
-            {
-                entity.ToTable("Product_Category_Mapping");
+           
 
-                entity.HasOne(d => d.Category)
-                    .WithMany(p => p.ProductCategoryMappings)
-                    .HasForeignKey(d => d.CategoryId)
-                    .HasConstraintName("FK_Product_Category_Mapping_Category");
-
-                entity.HasOne(d => d.Product)
-                    .WithMany(p => p.ProductCategoryMappings)
-                    .HasForeignKey(d => d.ProductId)
-                    .HasConstraintName("FK_Product_Category_Mapping_Product");
-            });
-
-            modelBuilder.Entity<ProductPictureMapping>(entity =>
-            {
-                entity.ToTable("Product_Picture_Mapping");
-
-                entity.HasOne(d => d.Picture)
-                    .WithMany(p => p.ProductPictureMappings)
-                    .HasForeignKey(d => d.PictureId)
-                    .HasConstraintName("FK_Product_Picture_Mapping_Picture");
-
-                entity.HasOne(d => d.Product)
-                    .WithMany(p => p.ProductPictureMappings)
-                    .HasForeignKey(d => d.ProductId)
-                    .HasConstraintName("FK_Product_Picture_Mapping_Product");
-            });
 
             modelBuilder.Entity<ProductVideoMapping>(entity =>
             {
@@ -173,7 +131,20 @@ namespace ECommerceLiveDemo.Models
                     .HasForeignKey(d => d.VideoId)
                     .HasConstraintName("FK_Product_Video_Mapping_Video");
             });
+        //    modelBuilder.Entity<VideoCategoryMapping>(entity =>
+        //    {
+         //       entity.ToTable("Video_Category_Mapping");
 
+         //       entity.HasOne(d => d.Category)
+         //           .WithMany(p => p.VideoCategoryMappings)
+         //           .HasForeignKey(d => d.CategoryId)
+         //           .HasConstraintName("FK_Video_Category_Mapping");
+
+         //       entity.HasOne(d => d.Video)
+         //           .WithMany(p => p.VideoCategoryMappings)
+         //           .HasForeignKey(d => d.VideoId)
+         //           .HasConstraintName("FK_Video_Category_Mapping");
+         //   });
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("User");

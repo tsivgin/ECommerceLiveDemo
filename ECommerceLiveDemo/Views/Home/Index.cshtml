@@ -1,4 +1,4 @@
-﻿@model ECommerceLiveDemo.Models.DTOs.BrandsDto
+﻿@model ECommerceLiveDemo.Models.DTOs.StremingVideoDto
 
 
       <!-- Sidebar -->
@@ -9,7 +9,7 @@
          <!-- Sol Menu Üst Bitiş -->
       
          <!-- Sol Menu Alt Başlangıç -->
-         @Html.Partial("PartialViewLayout/_LeftBottomBarPartial",Model)
+         @Html.Partial("PartialViewLayout/_LeftBottomBarPartial",Model.BrandsDto)
          <!-- Sol Menu Alt Bitiş -->
       </ul>
       <!-- Sol Menu Bitiş -->
@@ -46,7 +46,7 @@
             <!-- Videolar Başlangıç -->
                <div class="video-block section-padding">
                   <div class="row">
-                     @Html.Partial("_VideoPlayingPartial")
+                     @Html.Partial("_VideoPlayingPartial",Model)
                   </div>
                      @Html.Partial("_VideosPartial")
                </div>
