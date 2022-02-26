@@ -1,0 +1,104 @@
+@model ECommerceLiveDemo.Models.DTOs.UploadVideoDto
+
+
+<!-- Sidebar -->
+<!-- Sol menu -->
+<ul class="sidebar navbar-nav">
+    <!-- Sol Menu Üst Başlangıç -->
+    @Html.Partial("PartialViewLayout/_LeftTopBarPartial")
+    <!-- Sol Menu Üst Bitiş -->
+
+    <!-- Sol Menu Alt Başlangıç -->
+    @Html.Partial("PartialViewLayout/_LeftBottomBarPartial", Model.BrandsDto)
+    <!-- Sol Menu Alt Bitiş -->
+</ul>
+<!-- Sol Menu Bitiş -->
+
+<div class="container-fluid pb-0">
+
+    <div class="top-mobile-search">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="mobile-search">
+
+                    <!-- Search Bar Başlangıç -->
+                    <div class="input-group">
+                        <input type="text" placeholder="Search for..." class="form-control">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-dark">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Search Bar Bitiş -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="top-category section-padding mb-4">
+        @Html.Partial("PartialViewLayout/_TopChoicemenuPartial")
+
+
+    </div>
+    <hr>
+    <!--Channels başlangıç -->
+    <div class="video-block section-padding">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-title">
+                    <div class="btn-group float-right right-action">
+                        <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort by <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                        </div>
+                    </div>
+                    <h6>Kategoriler</h6>
+                </div>
+            </div>
+            <div class="col-md-12">
+                @* col-xl-2 col-sm-6 mb-3"*@
+                <div class="col-md-12" style="height: 214px;display: flex">
+                    @{
+                        foreach (var item in Model.Categories)
+                        {
+                            <div class="col-md-2">
+                                <div class="channels-card channels-card-background" onclick="location.href='/categorylist/@item.Id'" style="cursor:pointer;
+                                             background-image:url(https://img-incommerce-yargici.mncdn.com/mnresize/400/400/Content/Images/Originals/22152206_0.jpeg); ">
+
+                                    <div class="channels-card-body" style=" margin-top: 3%;">
+                                        <div class="channels-title channels-title-Card">
+                                            <a href="#">@item.Name</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+
+                </div>
+
+            </div>
+        </div>
+        @* <nav aria-label="Page navigation example">
+                                 <ul class="pagination justify-content-center pagination-sm mb-4">
+                                    <li class="page-item disabled">
+                                       <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                       <a class="page-link" href="#">Next</a>
+                                    </li>
+                                 </ul>
+                              </nav>*@
+    </div>
+
+
+</div>

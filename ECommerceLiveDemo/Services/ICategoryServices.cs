@@ -6,5 +6,6 @@ namespace ECommerceLiveDemo.Services
     public interface ICategoryServices
     {
         public List<Category> GetCategory();
+        public Category GetCategoryById(int Id);
     }
 }

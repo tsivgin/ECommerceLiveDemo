@@ -1,10 +1,7 @@
 ﻿using System.Diagnostics;
-using System.Linq;
 using ECommerceLiveDemo.Models;
-using ECommerceLiveDemo.Models.DTOs;
 using ECommerceLiveDemo.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace ECommerceLiveDemo.Controllers

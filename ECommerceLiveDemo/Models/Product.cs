@@ -32,6 +32,8 @@ namespace ECommerceLiveDemo.Models
         public string FileName { get; set; }
         [DisplayName("Resim Url'i")]
         public string FileUrl { get; set; }
+        [DisplayName("Ürün Url'i")]
+        public string ProductUrl { get; set; }
         public virtual ICollection<ProductVideoMapping> ProductVideoMappings { get; set; }
     }
 }

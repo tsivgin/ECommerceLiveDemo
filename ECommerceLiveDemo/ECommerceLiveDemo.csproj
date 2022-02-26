@@ -28,6 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Pages" />
       <Folder Include="wwwroot\assets\images\logos" />
     </ItemGroup>
 
@@ -290,6 +291,10 @@
       <_ContentIncludedByDefault Remove="wwwroot\assets\images\dashboard\user3.jpg" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\images\dashboard\user4.jpg" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\images\dashboard\user5.jpg" />
+      <_ContentIncludedByDefault Remove="Views\Category\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Category\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Category\List.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Category\List1.cshtml" />
     </ItemGroup>
 
 </Project>

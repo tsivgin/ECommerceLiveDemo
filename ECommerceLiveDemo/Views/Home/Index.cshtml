@@ -38,8 +38,7 @@
                <div class="top-category section-padding mb-4">
                      @Html.Partial("PartialViewLayout/_TopChoicemenuPartial")
                     
-                     @Html.Partial("PartialViewLayout/_TopCategoryMenuPartial")
-                     
+                   
                </div>
                <hr>
                
@@ -48,6 +47,8 @@
                   <div class="row">
                      @Html.Partial("_VideoPlayingPartial",Model)
                   </div>
+                    @Html.Partial("PartialViewLayout/_TopCategoryMenuPartial")
+                                       
                      @Html.Partial("_VideosPartial")
                </div>
             <hr class="mt-0">
