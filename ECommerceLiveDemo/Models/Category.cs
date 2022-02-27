@@ -20,7 +20,8 @@ namespace ECommerceLiveDemo.Models
         public string SystemName { get; set; }
         [DisplayName("Kategori Parent Id'si")]
         public int? ParentId { get; set; }
-
+        [DisplayName("Kategori Görseli")]
+        public string CategoryPicture { get; set; }
         public virtual ICollection<VideoCategoryMapping> VideoCategoryMappings { get; set; }
     }
 }

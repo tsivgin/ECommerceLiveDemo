@@ -295,6 +295,7 @@
       <_ContentIncludedByDefault Remove="Views\Category\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Category\List.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Category\List1.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CategoryList\Index.cshtml" />
     </ItemGroup>
 
 </Project>

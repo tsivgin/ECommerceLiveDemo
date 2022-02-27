@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading.Tasks;
 using ECommerceLiveDemo.Models;
 using ECommerceLiveDemo.Models.DTOs;
@@ -13,17 +14,20 @@ namespace ECommerceLiveDemo.Controllers
         private readonly SHOPContext _context;
         private readonly IBrandServices _brandServices;
         private readonly ICategoryServices _categoryServices;
+        private readonly IVideoServices _videoServices;
 
         public CategoryController(
             ILogger<UploadVideoController> logger,
             SHOPContext context,
             IBrandServices brandServices,
-            ICategoryServices categoryServices)
+            ICategoryServices categoryServices,
+            IVideoServices videoServices)
         {
             _logger = logger;
             _context = context;
             _brandServices = brandServices;
             _categoryServices = categoryServices;
+            _videoServices = videoServices;
         }
         public IActionResult Index()
         {
@@ -39,41 +43,22 @@ namespace ECommerceLiveDemo.Controllers
 
         [Route("CategoryList/{id?}")]
         public IActionResult List(int Id)
-        {  var brandsDto = _brandServices.SetBrandsDto();
-            var categories = _categoryServices.GetCategory();
-            var uploadVideoDto = new UploadVideoDto()
+        { 
+            var brandsDto = _brandServices.SetBrandsDto();
+            var category = _categoryServices.GetCategoryById(Id);
+            var videos = _videoServices.GetVideos(Id);
+            var playingVideo = videos.LastOrDefault();
+            var CategoryDto = new CategoryDto()
             {
                 BrandsDto = brandsDto,
-                Categories = categories
+                Category = category,
+                Videos = videos,
+                PlayingVideo = playingVideo,
+                Products = playingVideo.ProductVideoMappings.Select(i => i.Product).ToList()
             };
-            return View(uploadVideoDto);
-           //var brandsDto = _brandServices.SetBrandsDto();
-           // var category = _categoryServices.GetCategoryById(Id);
-           // var CategoryDto = new CategoryDto()
-           // {
-           //     BrandsDto = brandsDto,
-          //      Category = category
-          //  };
-          //  return View(CategoryDto);
+            return View(CategoryDto);
         }
-        [Route("CategoryListeleme")]
-        public IActionResult Listeleme()
-        {  var brandsDto = _brandServices.SetBrandsDto();
-            var categories = _categoryServices.GetCategory();
-            var uploadVideoDto = new UploadVideoDto()
-            {
-                BrandsDto = brandsDto,
-                Categories = categories
-            };
-            return View(uploadVideoDto);
-            //var brandsDto = _brandServices.SetBrandsDto();
-            // var category = _categoryServices.GetCategoryById(Id);
-            // var CategoryDto = new CategoryDto()
-            // {
-            //     BrandsDto = brandsDto,
-            //      Category = category
-            //  };
-            //  return View(CategoryDto);
-        }
+        
+      
     }
 }

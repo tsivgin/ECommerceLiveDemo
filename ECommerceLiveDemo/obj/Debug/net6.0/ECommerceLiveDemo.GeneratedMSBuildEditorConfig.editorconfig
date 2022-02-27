@@ -147,12 +147,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Listeleme.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvTGlzdGVsZW1lLmNzaHRtbA==
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideoCommentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvQ29tbWVudFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/CategoryList/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnlMaXN0L0luZGV4LmNzaHRtbA==
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideoPlayingPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvUGxheWluZ1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideosPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/Index.cshtml]

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using ECommerceLiveDemo.Models;
 using ECommerceLiveDemo.Models.DTOs;
@@ -24,9 +25,16 @@ namespace ECommerceLiveDemo.Services
                 VideoDescription = videos.Description,
                 Viewer = 100,
                 Products = videos.ProductVideoMappings.Select(i => i.Product).ToList(),
-                Categories = videos.VideoCategoryMappings?.Select(i=>i.Category).ToList()
+                Categories = _context.Categories.ToList()
             };
             return stremingVideoDto;
+        }
+        
+        public List<Video> GetVideos(int categoryId)
+        {
+            //Buraya bir alan eklenip ona göre çekilmesi gerek Geçici burası
+            var videos = _context.Videos.Where(i => i.VideoCategoryMappings.Any(j => j.CategoryId == categoryId)).ToList();
+            return videos;
         }
     }
 }

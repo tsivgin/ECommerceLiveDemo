@@ -63,17 +63,18 @@
             </div>
             <div class="col-md-12">
                 @* col-xl-2 col-sm-6 mb-3"*@
-                <div class="col-md-12" style="height: 214px;display: flex">
+                <div class="col-md-12" style="height: auto;
+                                                  display: flex;overflow: auto;flex-wrap: wrap;">
                     @{
                         foreach (var item in Model.Categories)
                         {
-                            <div class="col-md-2">
+                            <div class="col-md-2" style="height: 214px; margin-top: 2%">
                                 <div class="channels-card channels-card-background" onclick="location.href='/categorylist/@item.Id'" style="cursor:pointer;
-                                             background-image:url(https://img-incommerce-yargici.mncdn.com/mnresize/400/400/Content/Images/Originals/22152206_0.jpeg); ">
+                                             background-image:url(@item.CategoryPicture); ">
 
                                     <div class="channels-card-body" style=" margin-top: 3%;">
                                         <div class="channels-title channels-title-Card">
-                                            <a href="#">@item.Name</a>
+                                            <a href="/categorylist/@item.Id">@item.Name</a>
                                         </div>
                                     </div>
                                 </div>
