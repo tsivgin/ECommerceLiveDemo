@@ -58,7 +58,17 @@ namespace ECommerceLiveDemo.Controllers
             };
             return View(CategoryDto);
         }
-        
+        [Route("Stream")]
+        public IActionResult Stream()
+        {
+            return View();
+        }
+
+        [Route("Watching")]
+        public IActionResult Watching()
+        {
+            return View();
+        }
       
     }
 }
