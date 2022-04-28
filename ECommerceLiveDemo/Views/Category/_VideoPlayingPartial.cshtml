@@ -1,0 +1,94 @@
+@model ECommerceLiveDemo.Models.DTOs.CategoryDto
+<link href="//amp.azure.net/libs/amp/latest/skins/amp-default/azuremediaplayer.min.css" rel="stylesheet">
+    <script src= "//amp.azure.net/libs/amp/latest/azuremediaplayer.min.js"></script>
+
+<div class="col-md-8">
+    <div class="single-video-left">
+        <div class="single-video">
+            @*<iframe width="100%" height="315" src="https://aka.ms/azuremediaplayer?url=https%3A%2F%2Ftolgasivgin-tolgasivgin.preview-euwe.channel.media.azure.net%2Ff07a7d5a-13e1-4b57-abf8-b7cec90960fb%2Fpreview.ism%2Fmanifest" frameborder="0" allow="autoplay; encrypted-media" type="application/vnd.ms-sstr+xml"  allowfullscreen></iframe>
+        *@
+            <video id="vid1" class="azuremediaplayer amp-default-skin" autoplay controls width="640" height="400" poster="poster.jpg" data-setup='{"techOrder": ["azureHtml5JS", "flashSS", "html5FairPlayHLS","silverlightSS", "html5"], "nativeControlsForTouch": false}'>
+                    <source src="https://tolgasivgin-tolgasivgin.preview-euwe.channel.media.azure.net/f07a7d5a-13e1-4b57-abf8-b7cec90960fb/preview.ism/manifest" type="application/vnd.ms-sstr+xml" />
+                    <p class="amp-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+                    </p>
+                </video>
+        </div>
+        <div class="single-video-title box mb-3">
+            <h2>
+                <a href="#">@Model.PlayingVideo.Name</a>
+            </h2>
+            @*<p class="mb-0"><i class="fas fa-eye"></i> @Model.Viewer views</p>*@
+            <div style="display: flex;" class="col-md-12">
+                @foreach (var item in Model.Products)
+                {
+                    <div style="background-color: white;display: flex; border-radius: 5px;margin-right: 1%" class="col-md-4">
+
+                        <div style="display:inline-block; width: 50%;height: 90%; margin-top: 3.5%; margin-left: -7.5%;">
+                            <img alt="" src=@item.FileUrl style="border-radius: 15px; width: 100%;
+                                                                             border: 2px solid #fff;overflow: hidden;
+                                                                             object-fit: cover;height: 95%" href="@item.ProductUrl">
+                        </div>
+
+                        <div style="display:inline-block; margin-left: 5%;
+                                                                          margin-top: 12%; ; white-space: nowrap;
+                                                                          width: 50%;text-overflow: ellipsis;overflow: hidden;">
+                            <a style="margin-top:3%;margin-left: 3%;color:black;text-overflow: ellipsis;
+                                    " href="@item.ProductUrl" target="_blank">@item.Name</a>
+                            <p style="margin-top:65%;margin-left: 3%;width:100%;color: black">@item.Price TL</p>
+                        </div>
+
+                    </div>
+                }
+            </div>
+        </div>
+       @* <div class="single-video-info-content box mb-3">
+            <h6>Ürünler :</h6>
+            @{
+                foreach (var item in @Model.Products)
+                {
+                    <span>
+                        <a>@item.Name</a>
+                    </span>
+                }
+            }
+            <h6>Kategoriler :</h6>
+            @foreach (var item in @Model.Categories)
+            {
+                <span>
+                    <a>@item.Name</a>
+                </span>
+            }
+
+            <h6>Video Hakkında :</h6>
+            <p>@Model.VideoDescription </p>
+
+            <h6>Ürünler :</h6>
+            <p class="tags mb-0">
+                <div style="display: flex;" class="col-md-12">
+                    @foreach (var item in Model.Products)
+                    {
+                        <div style="background-color: white;display: flex; border-radius: 5px;margin-right: 1%" class="col-md-4">
+
+                            <div style="display:inline-block; width: 50%; margin-top: 3.5%; ">
+                                <img alt="" src=@item.FileUrl style="border-radius: 15px;
+                                                                 width: 100%;
+                                                                 border: 2px solid #fff;
+                                                                 overflow: hidden;
+                                                                 object-fit: cover;" href="@item.ProductUrl">
+                            </div>
+
+                            <div style="display:inline-block; margin-left: 10%;
+                                                              margin-top: 12%;">
+                                <a style="margin-top:3%;margin-left: 3%;color:black" href="@item.ProductUrl" target="_blank">@item.Name</a>
+                                <p style="margin-top:80%;margin-left: 3%;width:100%;color: black">@item.Price TL</p>
+                            </div>
+
+                        </div>
+                    }
+                </div>
+            </p>
+        </div>*@
+    </div>
+</div>
+@Html.Partial("_VideoCommentPartial")

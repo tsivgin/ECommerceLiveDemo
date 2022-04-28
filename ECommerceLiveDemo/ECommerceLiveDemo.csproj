@@ -11,7 +11,7 @@
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.1" />
       <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.1.22076.6" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
@@ -28,6 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Pages" />
       <Folder Include="wwwroot\assets\images\logos" />
     </ItemGroup>
 
@@ -290,6 +291,11 @@
       <_ContentIncludedByDefault Remove="wwwroot\assets\images\dashboard\user3.jpg" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\images\dashboard\user4.jpg" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\images\dashboard\user5.jpg" />
+      <_ContentIncludedByDefault Remove="Views\Category\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Category\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Category\List.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Category\List1.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\CategoryList\Index.cshtml" />
     </ItemGroup>
 
 </Project>

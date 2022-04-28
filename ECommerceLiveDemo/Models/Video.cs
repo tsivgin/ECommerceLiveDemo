@@ -10,6 +10,7 @@ namespace ECommerceLiveDemo.Models
     {
         public Video()
         {
+            VideoCategoryMappings = new HashSet<VideoCategoryMapping>();
             ProductVideoMappings = new HashSet<ProductVideoMapping>();
         }
 
@@ -28,8 +29,7 @@ namespace ECommerceLiveDemo.Models
         public string SecondImageLink { get; set; }
         [DisplayName("Oluşturulma Tarihi")]
         public DateTime? CreatedDate { get; set; }
-
-
+        public virtual ICollection<VideoCategoryMapping> VideoCategoryMappings { get; set; }
         public virtual ICollection<ProductVideoMapping> ProductVideoMappings { get; set; }
     }
 }

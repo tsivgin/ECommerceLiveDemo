@@ -18,5 +18,11 @@ namespace ECommerceLiveDemo.Services
             var category = _context.Categories.ToList();
             return category;
         }
+
+        public Category GetCategoryById(int Id)
+        {
+            var category = _context.Categories.FirstOrDefault(i => i.Id == Id);
+            return category;
+        }
     }
 }

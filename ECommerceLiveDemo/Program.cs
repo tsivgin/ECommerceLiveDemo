@@ -12,6 +12,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<SHOPContext>();
 builder.Services.AddScoped<IBrandServices, BrandServices>();
 builder.Services.AddScoped<ICategoryServices, CategoryServices>();
+builder.Services.AddScoped<IVideoServices, VideoServices>();
 
 var app = builder.Build();
 

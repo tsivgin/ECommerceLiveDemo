@@ -92,3 +92,4 @@ Version: 1.0
   });
 
 })(jQuery); // End of use strict
+
