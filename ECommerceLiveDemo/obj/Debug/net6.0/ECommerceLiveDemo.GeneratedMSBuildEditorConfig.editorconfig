@@ -147,6 +147,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Stream.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvU3RyZWFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Watching.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvV2F0Y2hpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideoCommentPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvQ29tbWVudFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -157,6 +165,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideosPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Customer/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/Index.cshtml]
@@ -201,6 +213,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_TopChoiceMenuPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19Ub3BDaG9pY2VNZW51UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_ValidationScriptsPartial.cshtml]

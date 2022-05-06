@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics;
+using System.Linq;
+using System.Security.Claims;
 using ECommerceLiveDemo.Models;
 using ECommerceLiveDemo.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +30,9 @@ public class HomeController : Controller
         var brandsDto = _brandServices.SetBrandsDto();
         var streamingVideoDto = _videoServices.SetStreamingVideoDto();
         streamingVideoDto.BrandsDto = brandsDto;
+        var a = User.Identity.Name;
+        var role = User
+            .Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role);
         return View(streamingVideoDto);
     }
 

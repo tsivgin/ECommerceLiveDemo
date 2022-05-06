@@ -20,5 +20,8 @@ namespace ECommerceLiveDemo.Models
         public string SystemName { get; set; }
 
         public virtual ICollection<UserUserRoleMapping> UserUserRoleMappings { get; set; }
+        
+        
     }
+    
 }
