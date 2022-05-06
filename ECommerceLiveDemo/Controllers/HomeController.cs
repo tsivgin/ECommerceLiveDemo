@@ -1,10 +1,18 @@
 ﻿using System.Diagnostics;
+using System.Dynamic;
 using System.Linq;
 using System.Security.Claims;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using ECommerceLiveDemo.Models;
+using ECommerceLiveDemo.Models.DTOs;
 using ECommerceLiveDemo.Services;
+using Jil;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using JsonSerializer = Newtonsoft.Json.JsonSerializer;
 
 namespace ECommerceLiveDemo.Controllers
 {
@@ -36,9 +44,19 @@ public class HomeController : Controller
         return View(streamingVideoDto);
     }
 
-    public IActionResult Privacy()
+    [Route("GetBrands")]
+    public IActionResult GetBrands(bool IsBrand)
     {
-        return View();
+        var brandsDto = _brandServices.SetBrandsDto();
+        if (IsBrand)
+        {
+            return new OkObjectResult(JsonConvert.SerializeObject( brandsDto.Brands.ToList()));
+        }
+        else
+        { 
+            var a = JsonConvert.SerializeObject(brandsDto.Influencers.FirstOrDefault());
+            return new OkObjectResult(JsonConvert.SerializeObject(brandsDto.Influencers));
+        }
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

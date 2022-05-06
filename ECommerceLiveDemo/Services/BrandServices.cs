@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using ECommerceLiveDemo.Models;
 using ECommerceLiveDemo.Models.DTOs;
@@ -15,8 +16,20 @@ namespace ECommerceLiveDemo.Services
         public BrandsDto SetBrandsDto()
         {
             var allBrands = _context.Brands.ToList();
-            var influencer = allBrands.Where(i=>!i.IsBrand).ToList();
-            var brands = allBrands.Where(i => i.IsBrand).ToList();
+            var allBrandsDto = new List<BrandDto>();
+            foreach (var brand in allBrands)
+            {
+                allBrandsDto.Add(new BrandDto
+                    {
+                        ImageLink = brand.ImageLink,
+                        Name = brand.Name
+                    }
+                    );
+                
+            }
+            var influencer = allBrandsDto.Where(i=>!i.IsBrand).ToList();
+            var brands = allBrandsDto.Where(i => i.IsBrand).ToList();
+           
             return new BrandsDto()
             {
                 Influencers = influencer,

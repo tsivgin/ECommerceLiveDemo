@@ -385,3 +385,4 @@
 /Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/bin/Debug/net6.0/System.Collections.Immutable.dll
 /Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
 /Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/bin/Debug/net6.0/System.Runtime.CompilerServices.Unsafe.dll
+/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/bin/Debug/net6.0/Newtonsoft.Json.dll

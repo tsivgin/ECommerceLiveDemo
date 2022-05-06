@@ -1,10 +1,55 @@
 @model ECommerceLiveDemo.Models.DTOs.BrandsDto
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#brands").click(function(){
+        datas();
+        console.log("buton basıldı");
+});
+    $("#Influencer").click(function(){
+            datasInfluencer();
+            console.log("buton basıldı");
+    });
+});
+
+
+function datas(){
+ var url = "/GetBrands?IsBrand=true";
+ $.getJSON(url,function (data)
+ {
+         $("#menu").html("");
+     for (var item in data){
+      $("#menu").append('<li> <a href="#"> <img alt="" src='+ data[item].ImageLink +'> '+ data[item].Name +' </a> </li>');
+      
+     }
+ });
+ }
+ 
+ function datasInfluencer(){
+ var url = "/GetBrands";
+ $.getJSON(url,function (data)
+ {
+         $("#menu").html("");
+     for (var item in data){
+      $("#menu").append('<li> <a href="#"> <img alt="" src='+ data[item].ImageLink +'> '+ data[item].Name +' </a> </li>');
+      
+     }
+ });
+ }
+</script>
+
+
+<button id="brands" type="button">Brands</button>
+
+<button id="Influencer" type="button">Influencer</button>
 
 <li class="nav-item channel-sidebar-list">
     
-    <ul>
+    
+    <ul id="menu">
         <h6>Influencer   |   Brands</h6>
-        @{
+       @* @{
             foreach (var item in Model.Influencers)
             {
                    <li>
@@ -13,7 +58,7 @@
                         </a>
                     </li>
             }
-        }
+        }*@
         @*<li>
             <a href="subscriptions.html">
                 <img class="img-fluid" alt="" src="img/s1.png"> Unboxing <span class="badge badge-warning">2</span>
