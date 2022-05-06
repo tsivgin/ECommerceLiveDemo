@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F7WgEwlOMvgeK1fwjlzW7MTlA+JxsHk6I0XTkv+JvMQ=",
+  "Hash": "ArKfN+uQCcyhfAfmcWuRKJWBrrwdR3UgU/ZLTBhVCGc=",
   "Source": "ECommerceLiveDemo",
   "BasePath": "_content/ECommerceLiveDemo",
   "Mode": "Default",
@@ -29886,6 +29886,40 @@
       "OriginalItemSpec": "wwwroot/assets/scss/themify/_variables.scss"
     },
     {
+      "Identity": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/css/Login.css",
+      "SourceId": "ECommerceLiveDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/",
+      "BasePath": "_content/ECommerceLiveDemo",
+      "RelativePath": "css/Login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Login.css"
+    },
+    {
+      "Identity": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/css/main.css",
+      "SourceId": "ECommerceLiveDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/",
+      "BasePath": "_content/ECommerceLiveDemo",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/main.css"
+    },
+    {
       "Identity": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/css/osahan.css",
       "SourceId": "ECommerceLiveDemo",
       "SourceType": "Discovered",
@@ -29971,6 +30005,23 @@
       "OriginalItemSpec": "wwwroot/img/v1.png"
     },
     {
+      "Identity": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/js/AgoraRTC_N-4.7.3.js",
+      "SourceId": "ECommerceLiveDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/",
+      "BasePath": "_content/ECommerceLiveDemo",
+      "RelativePath": "js/AgoraRTC_N-4.7.3.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/AgoraRTC_N-4.7.3.js"
+    },
+    {
       "Identity": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/js/custom.js",
       "SourceId": "ECommerceLiveDemo",
       "SourceType": "Discovered",
@@ -29986,6 +30037,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/custom.js"
+    },
+    {
+      "Identity": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/js/main.js",
+      "SourceId": "ECommerceLiveDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/",
+      "BasePath": "_content/ECommerceLiveDemo",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/main.js"
     },
     {
       "Identity": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/wwwroot/js/site.js",
