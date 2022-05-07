@@ -411,6 +411,13 @@ ipch/
 *.vspx
 *.sap
 
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+
 # JetBrains Rider
 .idea/
 *.sln.iml
