@@ -54,7 +54,6 @@ public class HomeController : Controller
         }
         else
         { 
-            var a = JsonConvert.SerializeObject(brandsDto.Influencers.FirstOrDefault());
             return new OkObjectResult(JsonConvert.SerializeObject(brandsDto.Influencers));
         }
     }
