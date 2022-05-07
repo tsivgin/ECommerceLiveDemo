@@ -54,7 +54,7 @@ namespace ECommerceLiveDemo.Controllers
                 Category = category,
                 Videos = videos,
                 PlayingVideo = playingVideo,
-                Products = playingVideo.ProductVideoMappings.Select(i => i.Product).ToList()
+                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList()
             };
             return View(CategoryDto);
         }
