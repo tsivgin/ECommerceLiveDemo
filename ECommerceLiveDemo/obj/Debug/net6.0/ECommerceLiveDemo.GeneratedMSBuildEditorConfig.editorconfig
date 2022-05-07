@@ -8,233 +8,233 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ECommerceLiveDemo
 build_property.RootNamespace = ECommerceLiveDemo
-build_property.ProjectDir = /Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/
+build_property.ProjectDir = C:\Users\Lenovo\Source\Repos\tsivgin\ECommerceLiveDemo\ECommerceLiveDemo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = /Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Source\Repos\tsivgin\ECommerceLiveDemo\ECommerceLiveDemo
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRzL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRzL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRzL0RldGFpbHMuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRzL0VkaXQuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQnJhbmRzL0luZGV4LmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Brands/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcmllcy9DcmVhdGUuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcmllcy9EZWxldGUuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcmllcy9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcmllcy9FZGl0LmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcmllcy9JbmRleC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdHMvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdHMvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdHMvRGV0YWlscy5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdHMvRWRpdC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdHMvSW5kZXguY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_Footer.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19Gb290ZXIuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_Header.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19IZWFkZXIuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_RightBar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19SaWdodEJhci5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_RightBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9SaWdodEJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_TopNavbar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19Ub3BOYXZiYXIuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Shared/_TopNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Ub3BOYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlcnMvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlcnMvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlcnMvRGV0YWlscy5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlcnMvRWRpdC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Videos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVmlkZW9zL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Videos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmlkZW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Videos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVmlkZW9zL0luZGV4LmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/Videos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmlkZW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/List.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvTGlzdC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Stream.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvU3RyZWFtLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Stream.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcU3RyZWFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Watching.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvV2F0Y2hpbmcuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/Watching.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcV2F0Y2hpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideoCommentPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvQ29tbWVudFBhcnRpYWwuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideoCommentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcX1ZpZGVvQ29tbWVudFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideoPlayingPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvUGxheWluZ1BhcnRpYWwuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideoPlayingPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcX1ZpZGVvUGxheWluZ1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideosPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvX1ZpZGVvc1BhcnRpYWwuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Category/_VideosPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcX1ZpZGVvc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Customer/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvTG9naW4uY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Customer/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideoCommentPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fVmlkZW9Db21tZW50UGFydGlhbC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideoCommentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfVmlkZW9Db21tZW50UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideoPlayingPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fVmlkZW9QbGF5aW5nUGFydGlhbC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideoPlayingPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfVmlkZW9QbGF5aW5nUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideosPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9fVmlkZW9zUGFydGlhbC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Home/_VideosPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfVmlkZW9zUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_LeftBottomBarPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19MZWZ0Qm90dG9tQmFyUGFydGlhbC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_LeftBottomBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3TGF5b3V0XF9MZWZ0Qm90dG9tQmFyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_LeftTopBarPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19MZWZ0VG9wQmFyUGFydGlhbC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_LeftTopBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3TGF5b3V0XF9MZWZ0VG9wQmFyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_PopularChannelsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19Qb3B1bGFyQ2hhbm5lbHNQYXJ0aWFsLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_PopularChannelsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3TGF5b3V0XF9Qb3B1bGFyQ2hhbm5lbHNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_TopCategoryMenuPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19Ub3BDYXRlZ29yeU1lbnVQYXJ0aWFsLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_TopCategoryMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3TGF5b3V0XF9Ub3BDYXRlZ29yeU1lbnVQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_TopChoiceMenuPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxWaWV3TGF5b3V0L19Ub3BDaG9pY2VNZW51UGFydGlhbC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/PartialViewLayout/_TopChoiceMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3TGF5b3V0XF9Ub3BDaG9pY2VNZW51UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_LoginLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpbkxheW91dC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/UploadVideo/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXBsb2FkVmlkZW8vSW5kZXguY3NodG1s
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/UploadVideo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBsb2FkVmlkZW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-8nmqogp8zq
+[C:/Users/Lenovo/Source/Repos/tsivgin/ECommerceLiveDemo/ECommerceLiveDemo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uxibny9ig6

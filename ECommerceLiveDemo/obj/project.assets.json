@@ -8402,24 +8402,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/tolgasivgin/.nuget/packages/": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/ECommerceLiveDemo.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\tsivgin\\ECommerceLiveDemo\\ECommerceLiveDemo\\ECommerceLiveDemo.csproj",
       "projectName": "ECommerceLiveDemo",
-      "projectPath": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/ECommerceLiveDemo.csproj",
-      "packagesPath": "/Users/tolgasivgin/.nuget/packages/",
-      "outputPath": "/Users/tolgasivgin/Documents/GitHub/ECommerceLiveDemo/ECommerceLiveDemo/obj/",
+      "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\tsivgin\\ECommerceLiveDemo\\ECommerceLiveDemo\\ECommerceLiveDemo.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\tsivgin\\ECommerceLiveDemo\\ECommerceLiveDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/tolgasivgin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8495,7 +8497,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
