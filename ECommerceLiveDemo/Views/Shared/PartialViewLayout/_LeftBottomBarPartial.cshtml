@@ -1,48 +1,4 @@
 @model ECommerceLiveDemo.Models.DTOs.BrandsDto
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-<script>
-window.onload = function() {
-    datasInfluencer();
-};
-
-$(document).ready(function(){
-    $("#brands").click(function(){
-        datas();
-        console.log("buton basıldı");
-});
-    $("#Influencer").click(function(){
-            datasInfluencer();
-            console.log("buton basıldı");
-    });
-});
-
-
-function datas(){
- var url = "/GetBrands?IsBrand=true";
- $.getJSON(url,function (data)
- {
-         $("#menu").html("");
-     for (var item in data){
-      $("#menu").append('<li> <a href="#"> <img alt="" src='+ data[item].ImageLink +'> '+ data[item].Name +' </a> </li>');
-      
-     }
- });
- }
- 
- function datasInfluencer(){
- var url = "/GetBrands";
- $.getJSON(url,function (data)
- {
-         $("#menu").html("");
-     for (var item in data){
-      $("#menu").append('<li> <a href="#"> <img alt="" src='+ data[item].ImageLink +'> '+ data[item].Name +' </a> </li>');
-      
-     }
- });
- }
-</script>
-
 
 <button id="brands" type="button">Brands</button>
 

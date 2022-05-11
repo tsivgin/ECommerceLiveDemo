@@ -13,6 +13,7 @@ namespace ECommerceLiveDemo.Services
         {
             _context = context;
         }
+
         public BrandsDto SetBrandsDto()
         {
             var allBrands = _context.Brands.ToList();
@@ -22,14 +23,15 @@ namespace ECommerceLiveDemo.Services
                 allBrandsDto.Add(new BrandDto
                     {
                         ImageLink = brand.ImageLink,
-                        Name = brand.Name
+                        Name = brand.Name,
+                        IsBrand = brand.IsBrand
                     }
-                    );
-                
+                );
             }
-            var influencer = allBrandsDto.Where(i=>!i.IsBrand).ToList();
+
+            var influencer = allBrandsDto.Where(i => !i.IsBrand).ToList();
             var brands = allBrandsDto.Where(i => i.IsBrand).ToList();
-           
+
             return new BrandsDto()
             {
                 Influencers = influencer,

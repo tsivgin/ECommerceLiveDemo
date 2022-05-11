@@ -1,12 +1,15 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using ECommerceLiveDemo.Models;
+using ECommerceLiveDemo.Models.DTOs;
 using ECommerceLiveDemo.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace ECommerceLiveDemo.Controllers
 {
@@ -26,9 +29,12 @@ namespace ECommerceLiveDemo.Controllers
         [AllowAnonymous]
         [HttpGet]
         [Route("Login")]
-        public IActionResult Login(string username)
-        { 
-            
+        public IActionResult Login()
+        {
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index","Home");
+            }
             return View();
         }
         
@@ -51,6 +57,30 @@ namespace ECommerceLiveDemo.Controllers
                 return RedirectToAction("Index","Home");
             }
             return View();
+        }
+        
+        [HttpGet]
+        [Route("Logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Index","Home");
+        }
+        
+        [Route("GetUser")]
+        public IActionResult GetUser()
+        {
+            User user = new User();
+            UserDto userDto = new UserDto();
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                var email = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name).Value;
+                user = _userServices.GetUser(email);
+                userDto.IsLogin = true;
+                userDto.Name = user.FirstName;
+            }
+
+            return new OkObjectResult(JsonConvert.SerializeObject(userDto));
         }
     }
 }

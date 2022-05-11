@@ -18,5 +18,10 @@ namespace ECommerceLiveDemo.Services
             var login = _context.Users.FirstOrDefault(i=>i.Email == user.Email && i.Password == user.Password);
             return login;
         }
+        public  User GetUser(string email)
+        {
+            var user = _context.Users.FirstOrDefault(i=>i.Email == email);
+            return user;
+        }
     }
 }

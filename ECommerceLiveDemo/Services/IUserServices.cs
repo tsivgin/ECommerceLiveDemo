@@ -4,6 +4,7 @@ namespace ECommerceLiveDemo.Services
 {
     public interface IUserServices
     {
-        public User LoginAction(User user);
+        User LoginAction(User user);
+        User GetUser(string email);
     }
 }
