@@ -131,11 +131,9 @@ window.onload = function() {
 $(document).ready(function(){
     $("#brands").click(function(){
         datas();
-        console.log("buton basıldı");
 });
     $("#Influencer").click(function(){
             datasInfluencer();
-            console.log("buton basıldı");
     });
 });
 
@@ -172,12 +170,8 @@ function datas(){
  var url = "/GetUser";
  $.getJSON(url,function (data)
  {
-    console.log("data çek");
-    
-    console.log(data);
      if(data.IsLogin)
      {
-        console.log("Login");
         $("#login").append(
               '<a class="nav-link dropdown-toggle user-dropdown-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
             + '<img alt="Avatar" src="img/person.svg">'

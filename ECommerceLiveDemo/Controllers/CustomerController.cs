@@ -14,10 +14,10 @@ using Newtonsoft.Json;
 namespace ECommerceLiveDemo.Controllers
 {
     public class CustomerController : Controller
-    { 
+    {
         private readonly ILogger<UploadVideoController> _logger;
-        private readonly IUserServices _userServices; 
-        
+        private readonly IUserServices _userServices;
+
         public CustomerController(
             ILogger<UploadVideoController> logger,
             IUserServices userServices)
@@ -25,7 +25,7 @@ namespace ECommerceLiveDemo.Controllers
             _logger = logger;
             _userServices = userServices;
         }
-        
+
         [AllowAnonymous]
         [HttpGet]
         [Route("Login")]
@@ -33,40 +33,69 @@ namespace ECommerceLiveDemo.Controllers
         {
             if (HttpContext.User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index", "Home");
             }
+
             return View();
         }
-        
-        
+
+
         [HttpPost]
         [Route("Login")]
         public async Task<IActionResult> Login(User user)
         {
             var login = _userServices.LoginAction(user);
-            if (login !=null)
+            if (login != null)
             {
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, login.Email),
-                    new Claim(ClaimTypes.Role,"Admin")
+                    new Claim(ClaimTypes.Role, "Admin")
                 };
                 var userIdentity = new ClaimsIdentity(claims, "Login");
                 ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
                 await HttpContext.SignInAsync(principal);
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index", "Home");
             }
+
             return View();
         }
-        
+
         [HttpGet]
         [Route("Logout")]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
-        
+
+        [HttpPost]
+        [Route("Register")]
+        public async Task<IActionResult> Register(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                var RegUser = _userServices.GetUser(user.Email);
+                if (RegUser == null)
+                {
+                    await _userServices.RegisterAction(user);
+                 
+                    await _userServices.RegisterCustomerRole(user.Email,"Customer");
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, user.Email),
+                        new Claim(ClaimTypes.Role, "Customer")
+                    };
+                    var userIdentity = new ClaimsIdentity(claims, "Login");
+                    ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
+                    await HttpContext.SignInAsync(principal);
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            return RedirectToAction("Login", "Customer");
+        }
+
         [Route("GetUser")]
         public IActionResult GetUser()
         {

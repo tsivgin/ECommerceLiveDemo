@@ -23,5 +23,23 @@ namespace ECommerceLiveDemo.Services
             var user = _context.Users.FirstOrDefault(i=>i.Email == email);
             return user;
         }
+        public async  Task RegisterAction(User user)
+        {
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task RegisterCustomerRole(string Email, string Role)
+        {
+            var getUser = GetUser(Email);
+            UserUserRoleMapping userRoleMapping = new UserUserRoleMapping
+            {
+                User = getUser,
+                UserId = getUser.Id,
+                UserRoleId = _context.UserRoles.FirstOrDefault(i=>i.Name == Role)?.Id
+            };
+            _context.UserUserRoleMappings.Add(userRoleMapping);
+            await _context.SaveChangesAsync();
+        }
     }
 }
