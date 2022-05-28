@@ -848,6 +848,7 @@ Version: 1.0
      border-radius: 2px;
      overflow: hidden;
      position: relative;
+     height : 170px;
 }
  .time {
      background: #f5234a none repeat scroll 0 0;
@@ -866,6 +867,8 @@ Version: 1.0
 }
 .video-card-image img {
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
  .play-icon {
      opacity: 0;
@@ -919,6 +922,7 @@ Version: 1.0
 }
  .video-card-body {
      padding: 12px;
+     height:105px;
 }
  .video-card-list .video-card-image {
      float: left;
@@ -1262,6 +1266,8 @@ Version: 1.0
     }
      .video-card-image img {
          width: 100%;
+         object-fit: cover;
+         height: 100%;
     }
      footer {
         padding: 15px 0 !important;

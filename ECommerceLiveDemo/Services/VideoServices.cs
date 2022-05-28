@@ -18,22 +18,28 @@ namespace ECommerceLiveDemo.Services
         {
             //Buraya bir alan eklenip ona göre çekilmesi gerek Geçici burası
             var videos = _context.Videos.FirstOrDefault();
-            var stremingVideoDto = new StremingVideoDto
+            var streamingVideoDto = new StremingVideoDto
             {
                 VideoUrl = videos.FileUrl,
                 VideoName = videos.Name,
                 VideoDescription = videos.Description,
                 Viewer = 100,
                 Products = videos.ProductVideoMappings.Select(i => i.Product).ToList(),
-                Categories = _context.Categories.ToList()
+                Categories = _context.Categories.ToList(),
+                Videos = _context.Videos.Take(10).ToList()
             };
-            return stremingVideoDto;
+            return streamingVideoDto;
         }
         
-        public List<Video> GetVideos(int categoryId)
+        public List<Video> GetVideosByCategoryId(int categoryId)
         {
             //Buraya bir alan eklenip ona göre çekilmesi gerek Geçici burası
             var videos = _context.Videos.Where(i => i.VideoCategoryMappings.Any(j => j.CategoryId == categoryId)).ToList();
+            return videos;
+        }
+        public List<Video> GetVideosById(int Id)
+        {
+            var videos = _context.Videos.Where(i => i.Id == Id).ToList();
             return videos;
         }
     }

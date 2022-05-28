@@ -7,6 +7,7 @@ namespace ECommerceLiveDemo.Services
     public interface IVideoServices
     {
         public StremingVideoDto SetStreamingVideoDto();
-        public List<Video> GetVideos(int categoryId);
+        public List<Video> GetVideosByCategoryId(int categoryId);
+        public List<Video> GetVideosById(int Id);
     }
 }

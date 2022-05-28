@@ -1,5 +1,4 @@
-﻿@model ECommerceLiveDemo.Models.DTOs.StremingVideoDto
-
+@model ECommerceLiveDemo.Models.DTOs.CategoryDto
 
       <!-- Sidebar -->
       <!-- Sol menu -->
@@ -9,7 +8,7 @@
          <!-- Sol Menu Üst Bitiş -->
       
          <!-- Sol Menu Alt Başlangıç -->
-         @Html.Partial("PartialViewLayout/_LeftBottomBarPartial")
+         @Html.Partial("PartialViewLayout/_LeftBottomBarPartial",Model.BrandsDto)
          <!-- Sol Menu Alt Bitiş -->
       </ul>
       <!-- Sol Menu Bitiş -->
@@ -40,20 +39,19 @@
                     
                    
                </div>
-               <hr>
-               
+               <h3>@Model.Category.Name</h3>
             <!-- Videolar Başlangıç -->
                <div class="video-block section-padding">
                   <div class="row">
                      @Html.Partial("_VideoPlayingPartial",Model)
                   </div>
-                    @Html.Partial("PartialViewLayout/_TopCategoryMenuPartial")
                                        
-                     @Html.Partial("_VideosPartial",Model)
+                     @Html.Partial("_VideosPartial")
                </div>
             <hr class="mt-0">
             <!-- Videolar Bitiş-->
             
+               
                <!-- Popular Channel Başlangıç -->
                <div class="video-block section-padding">
                   @Html.Partial("PartialViewLayout/_PopularChannelsPartial")
@@ -63,4 +61,3 @@
             <!-- /.container-fluid -->
            
          
-      

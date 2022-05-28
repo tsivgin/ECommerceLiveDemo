@@ -29,12 +29,10 @@ namespace ECommerceLiveDemo.Controllers
 
         public IActionResult Index()
         {
-            var brandsDto = _brandServices.SetBrandsDto();
+            // var brandsDto = _brandServices.SetBrandsDto();
             var streamingVideoDto = _videoServices.SetStreamingVideoDto();
-            streamingVideoDto.BrandsDto = brandsDto;
-            var a = User.Identity.Name;
-            var role = User
-                .Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role);
+            // streamingVideoDto.BrandsDto = brandsDto;
+            
             return View(streamingVideoDto);
         }
 

@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Threading.Tasks;
 using ECommerceLiveDemo.Models;
 using ECommerceLiveDemo.Models.DTOs;
 using ECommerceLiveDemo.Services;
@@ -8,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace ECommerceLiveDemo.Controllers
 {
-    public class CategoryController: Controller
+    public class VideoController: Controller
     { 
         private readonly ILogger<UploadVideoController> _logger;
         private readonly SHOPContext _context;
@@ -16,7 +15,7 @@ namespace ECommerceLiveDemo.Controllers
         private readonly ICategoryServices _categoryServices;
         private readonly IVideoServices _videoServices;
 
-        public CategoryController(
+        public VideoController(
             ILogger<UploadVideoController> logger,
             SHOPContext context,
             IBrandServices brandServices,
@@ -29,25 +28,16 @@ namespace ECommerceLiveDemo.Controllers
             _categoryServices = categoryServices;
             _videoServices = videoServices;
         }
-        public IActionResult Index()
-        {
-            var brandsDto = _brandServices.SetBrandsDto();
-            var categories = _categoryServices.GetCategory();
-            var uploadVideoDto = new UploadVideoDto()
-            {
-                BrandsDto = brandsDto,
-                Categories = categories
-            };
-            return View(uploadVideoDto);
-        }
-
-        [Route("CategoryList/{id?}")]
+        
+        
+        [Route("Video/{id?}")]
         public IActionResult List(int Id)
         { 
             var brandsDto = _brandServices.SetBrandsDto();
-            var category = _categoryServices.GetCategoryById(Id);
-            var videos = _videoServices.GetVideosByCategoryId(Id);
+            var videos = _videoServices.GetVideosById(Id);
             var playingVideo = videos.LastOrDefault();
+            var category =
+                _categoryServices.GetCategoryById(playingVideo.VideoCategoryMappings.FirstOrDefault().CategoryId.Value);
             var CategoryDto = new CategoryDto()
             {
                 BrandsDto = brandsDto,
@@ -58,17 +48,5 @@ namespace ECommerceLiveDemo.Controllers
             };
             return View(CategoryDto);
         }
-        [Route("Stream")]
-        public IActionResult Stream()
-        {
-            return View();
-        }
-
-        [Route("Watching")]
-        public IActionResult Watching()
-        {
-            return View();
-        }
-        
     }
 }
