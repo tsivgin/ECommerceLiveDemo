@@ -27,6 +27,7 @@ namespace ECommerceLiveDemo.Models
         public virtual DbSet<UserRole> UserRoles { get; set; }
         public virtual DbSet<UserUserRoleMapping> UserUserRoleMappings { get; set; }
         public virtual DbSet<Video> Videos { get; set; }
+        public virtual DbSet<VideoBrandMapping> VideoBrandMapping { get; set; }
 
 
 
@@ -82,6 +83,21 @@ namespace ECommerceLiveDemo.Models
                     .HasConstraintName("FK_Brand_User_Mapping_User");
             });
 
+            // modelBuilder.Entity<VideoBrandMapping>(entity =>
+            // {
+            //
+            //     entity.ToTable("Video_Brand_Mapping");
+            //
+            //     entity.HasOne(d => d.Brand)
+            //         .WithMany(p => p.VideoBrandMappings)
+            //         .HasForeignKey(d => d.BrandId)
+            //         .HasConstraintName("FK_Video_Brand_Mapping_Brand");
+            //
+            //     entity.HasOne(d => d.Video)
+            //         .WithMany(p => p.VideoBrandMappings)
+            //         .HasForeignKey(d => d.VideoId)
+            //         .HasConstraintName("FK_Video_Brand_Mapping_Video");
+            // });
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.ToTable("Category");

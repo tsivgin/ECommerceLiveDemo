@@ -12,6 +12,7 @@ namespace ECommerceLiveDemo.Models
         {
             VideoCategoryMappings = new HashSet<VideoCategoryMapping>();
             ProductVideoMappings = new HashSet<ProductVideoMapping>();
+            VideoBrandMappings = new HashSet<VideoBrandMapping>();
         }
 
         public int Id { get; set; }
@@ -31,5 +32,6 @@ namespace ECommerceLiveDemo.Models
         public DateTime? CreatedDate { get; set; }
         public virtual ICollection<VideoCategoryMapping> VideoCategoryMappings { get; set; }
         public virtual ICollection<ProductVideoMapping> ProductVideoMappings { get; set; }
+        public virtual ICollection<VideoBrandMapping> VideoBrandMappings { get; set; }
     }
 }

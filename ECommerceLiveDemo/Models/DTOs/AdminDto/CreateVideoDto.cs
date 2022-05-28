@@ -22,5 +22,7 @@ namespace ECommerceLiveDemo.Models.DTOs.AdminDto
         public DateTime? CreatedDate { get; set; }
         [DisplayName("Kategori Id")] 
         public string CategoryId { get; set; }
+        [DisplayName("Brand Id")] 
+        public string BrandId { get; set; }
     }
 }

@@ -11,6 +11,7 @@ namespace ECommerceLiveDemo.Models
         public Brand()
         {
             Products = new HashSet<Product>();
+            VideoBrandMappings = new HashSet<VideoBrandMapping>();
         }
 
         public int Id { get; set; }
@@ -29,5 +30,6 @@ namespace ECommerceLiveDemo.Models
 
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<BrandUserMapping> BrandUserMappings { get; set; }
+        public virtual ICollection<VideoBrandMapping> VideoBrandMappings { get; set; }
     }
 }

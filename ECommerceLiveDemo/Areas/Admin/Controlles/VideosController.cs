@@ -34,6 +34,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
             //    ViewBag.BrandId = new SelectList(_context.Brands, "Id", "Name");
             // ViewData["BrandName"] = new SelectList(_context.Brands, "Id", "Name");
             ViewData["CategoryName"] = new SelectList(_context.Categories, "Id", "Name");
+            ViewData["BrandName"] = new SelectList(_context.Brands, "Id", "Name");
             return View();
         }
 
@@ -44,7 +45,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-            [Bind("Id,Name,FileName,FileUrl,FirstImageLink,SecondImageLink,Description,CategoryId")]
+            [Bind("Id,Name,FileName,FileUrl,FirstImageLink,SecondImageLink,Description,CategoryId,BrandId")]
             CreateVideoDto videoDto)
         {
             if (ModelState.IsValid)
@@ -67,7 +68,15 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
                     Video = video,
                     CategoryId = Convert.ToInt32(videoDto.CategoryId)
                 };
+                VideoBrandMapping videoBrandMapping = new VideoBrandMapping
+                { 
+                    VideoId = videoId,
+                    Video = video,
+                    BrandId = Convert.ToInt32(videoDto.BrandId)
+
+                };
                 _context.Add(videoCategoryMapping);
+                _context.Add(videoBrandMapping);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

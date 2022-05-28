@@ -11,45 +11,48 @@
     <div class="col-md-4">
         <h1></h1>
         <h4 style="text-align:center">Video</h4>
-        <hr />
+        <hr/>
 
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+                <input asp-for="Name" class="form-control"/>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FileName" class="control-label"></label>
-                <input asp-for="FileName" class="form-control" />
+                <input asp-for="FileName" class="form-control"/>
                 <span asp-validation-for="FileName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FileUrl" class="control-label"></label>
-                <input asp-for="FileUrl" class="form-control" />
+                <input asp-for="FileUrl" class="form-control"/>
                 <span asp-validation-for="FileUrl" class="text-danger"></span>
             </div>
-               <div class="form-group">
-                   <label asp-for="FirstImageLink" class="control-label"></label> 
-                   <input asp-for="FirstImageLink" class="form-control" />
-                   <span asp-validation-for="FirstImageLink" class="text-danger"></span>
-               </div>
-               <div class="form-group">
-                   <label asp-for="SecondImageLink" class="control-label"></label> 
-                   <input asp-for="SecondImageLink" class="form-control" />
-                   <span asp-validation-for="SecondImageLink" class="text-danger"></span>
-               </div>
-               <div class="form-group">
-                   <label asp-for="Description" class="control-label"></label> 
-                   <input asp-for="Description" class="form-control" />
-                   <span asp-validation-for="Description" class="text-danger"></span>
-               </div>
-<div class="form-group">
+            <div class="form-group">
+                <label asp-for="FirstImageLink" class="control-label"></label>
+                <input asp-for="FirstImageLink" class="form-control"/>
+                <span asp-validation-for="FirstImageLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SecondImageLink" class="control-label"></label>
+                <input asp-for="SecondImageLink" class="form-control"/>
+                <span asp-validation-for="SecondImageLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control"/>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="CategoryId" class="control-label"></label>
                 <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryName"></select>
             </div>
-
+            <div class="form-group">
+                <label asp-for="BrandId" class="control-label"></label>
+                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandName"></select>
+            </div>
 
             @*<div class="form-group">
                     <label asp-for="CreateDate" class="control-label"></label>
@@ -62,7 +65,7 @@
                     <span asp-validation-for="UpdateDate" class="text-danger"></span>
                 </div>*@
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary"/>
             </div>
         </form>
     </div>
@@ -71,5 +74,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
-
