@@ -22,6 +22,7 @@ namespace ECommerceLiveDemo.Services
             {
                 allBrandsDto.Add(new BrandDto
                     {
+                        Id = brand.Id,
                         ImageLink = brand.ImageLink,
                         Name = brand.Name,
                         IsBrand = brand.IsBrand
@@ -37,6 +38,11 @@ namespace ECommerceLiveDemo.Services
                 Influencers = influencer,
                 Brands = brands
             };
+        }
+
+        public Brand? GetBrandById(int Id)
+        {
+            return  _context.Brands.FirstOrDefault(i => i.Id == Id);
         }
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ECommerceLiveDemo.Models;
 
@@ -8,6 +9,7 @@ namespace ECommerceLiveDemo.Services
         User LoginAction(User user);
         User GetUser(string email);
         Task RegisterAction(User user);
-        Task RegisterCustomerRole(string Email,string Role);
+        Task RegisterCustomerRole(string email,string role);
+        List<string> GetUserRolesByUser(User user);
     }
 }

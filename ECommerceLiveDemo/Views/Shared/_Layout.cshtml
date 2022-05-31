@@ -157,7 +157,7 @@ function datas(){
  {
          $("#menu").html("");
      for (var item in data){
-      $("#menu").append('<li> <a href="#"> <img alt="" src='+ data[item].ImageLink +'> '+ data[item].Name +' </a> </li>');
+      $("#menu").append('<li> <a href='+ "/Brands/"+data[item].Id +'> <img alt="" src='+ data[item].ImageLink +'> '+ data[item].Name +' </a> </li>');
       
      }
  });

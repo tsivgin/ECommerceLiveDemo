@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ECommerceLiveDemo.Models;
@@ -22,6 +23,12 @@ namespace ECommerceLiveDemo.Services
         {
             var user = _context.Users.FirstOrDefault(i=>i.Email == email);
             return user;
+        }
+        public  List<string> GetUserRolesByUser(User user)
+        {
+            var userRoles = _context.Users.FirstOrDefault(i=>i.Id == user.Id).UserUserRoleMappings.Select(i=>i.UserRole);
+            var userRoleNames = userRoles.Select(i => i.Name).ToList();
+            return userRoleNames;
         }
         public async  Task RegisterAction(User user)
         {

@@ -10,21 +10,15 @@ namespace ECommerceLiveDemo.Controllers
 {
     public class CategoryController: Controller
     { 
-        private readonly ILogger<UploadVideoController> _logger;
-        private readonly SHOPContext _context;
         private readonly IBrandServices _brandServices;
         private readonly ICategoryServices _categoryServices;
         private readonly IVideoServices _videoServices;
 
         public CategoryController(
-            ILogger<UploadVideoController> logger,
-            SHOPContext context,
             IBrandServices brandServices,
             ICategoryServices categoryServices,
             IVideoServices videoServices)
         {
-            _logger = logger;
-            _context = context;
             _brandServices = brandServices;
             _categoryServices = categoryServices;
             _videoServices = videoServices;
@@ -44,13 +38,11 @@ namespace ECommerceLiveDemo.Controllers
         [Route("CategoryList/{id?}")]
         public IActionResult List(int Id)
         { 
-            var brandsDto = _brandServices.SetBrandsDto();
             var category = _categoryServices.GetCategoryById(Id);
             var videos = _videoServices.GetVideosByCategoryId(Id);
             var playingVideo = videos.LastOrDefault();
             var CategoryDto = new CategoryDto()
             {
-                BrandsDto = brandsDto,
                 Category = category,
                 Videos = videos,
                 PlayingVideo = playingVideo,

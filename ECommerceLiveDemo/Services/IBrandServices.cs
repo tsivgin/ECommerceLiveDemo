@@ -1,3 +1,4 @@
+using ECommerceLiveDemo.Models;
 using ECommerceLiveDemo.Models.DTOs;
 
 namespace ECommerceLiveDemo.Services
@@ -5,5 +6,6 @@ namespace ECommerceLiveDemo.Services
     public interface IBrandServices
     {
         public BrandsDto SetBrandsDto();
+        Brand? GetBrandById(int Id);
     }
 }

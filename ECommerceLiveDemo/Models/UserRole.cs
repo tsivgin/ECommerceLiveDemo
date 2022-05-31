@@ -18,7 +18,8 @@ namespace ECommerceLiveDemo.Models
         public string Name { get; set; }
         [DisplayName("Rol Sistem İsmi")]
         public string SystemName { get; set; }
-
+        
+        public int Priority { get; set; }
         public virtual ICollection<UserUserRoleMapping> UserUserRoleMappings { get; set; }
         
         

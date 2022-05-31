@@ -33,14 +33,30 @@ namespace ECommerceLiveDemo.Controllers
         [Route("Video/{id?}")]
         public IActionResult List(int Id)
         { 
-            var brandsDto = _brandServices.SetBrandsDto();
             var videos = _videoServices.GetVideosById(Id);
             var playingVideo = videos.LastOrDefault();
             var category =
                 _categoryServices.GetCategoryById(playingVideo.VideoCategoryMappings.FirstOrDefault().CategoryId.Value);
             var CategoryDto = new CategoryDto()
             {
-                BrandsDto = brandsDto,
+                Category = category,
+                Videos = videos,
+                PlayingVideo = playingVideo,
+                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList()
+            };
+            return View(CategoryDto);
+        }
+        
+        [Route("Brands/{id?}")]
+        public IActionResult BrandsList(int Id)
+        {
+            var brand = _brandServices.GetBrandById(Id);
+            //
+            var category = _categoryServices.GetCategoryById(Id);
+            var videos = _videoServices.GetVideosByCategoryId(Id);
+            var playingVideo = videos.LastOrDefault();
+            var CategoryDto = new CategoryDto()
+            {
                 Category = category,
                 Videos = videos,
                 PlayingVideo = playingVideo,

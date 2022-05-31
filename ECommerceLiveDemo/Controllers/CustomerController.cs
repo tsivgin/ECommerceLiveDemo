@@ -50,9 +50,13 @@ namespace ECommerceLiveDemo.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, login.Email),
-                    new Claim(ClaimTypes.Role, "Admin")
-                };
+                    
+               };
                 var userIdentity = new ClaimsIdentity(claims, "Login");
+                foreach (var role in _userServices.GetUserRolesByUser(login))
+                {
+                    userIdentity.AddClaim(new Claim(ClaimTypes.Role, role));
+                }
                 ClaimsPrincipal principal = new ClaimsPrincipal(userIdentity);
                 await HttpContext.SignInAsync(principal);
                 return RedirectToAction("Index", "Home");
