@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ECommerceLiveDemo.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ECommerceLiveDemo.Areas.Admin.Controlles
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class BrandsController : Controller
     {

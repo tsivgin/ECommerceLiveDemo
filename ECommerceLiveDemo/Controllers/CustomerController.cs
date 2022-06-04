@@ -111,9 +111,14 @@ namespace ECommerceLiveDemo.Controllers
                 user = _userServices.GetUser(email);
                 userDto.IsLogin = true;
                 userDto.Name = user.FirstName;
+                userDto.IsBrand =
+                    user.UserUserRoleMappings.Any(i => i.UserRole.Name == "Influencer" 
+                                                       || i.UserRole.Name == "Brand");
             }
 
             return new OkObjectResult(JsonConvert.SerializeObject(userDto));
         }
+        
+       
     }
 }

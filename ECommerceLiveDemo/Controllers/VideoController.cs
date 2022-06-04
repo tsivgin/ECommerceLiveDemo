@@ -33,16 +33,18 @@ namespace ECommerceLiveDemo.Controllers
         [Route("Video/{id?}")]
         public IActionResult List(int Id)
         { 
-            var videos = _videoServices.GetVideosById(Id);
-            var playingVideo = videos.LastOrDefault();
+            var playingVideo = _videoServices.GetVideosById(Id).LastOrDefault();
             var category =
                 _categoryServices.GetCategoryById(playingVideo.VideoCategoryMappings.FirstOrDefault().CategoryId.Value);
+            var videos = _videoServices.GetVideosByCategoryId(category.Id);
+            var popularBrands = _brandServices.GetPopularBrands();
             var CategoryDto = new CategoryDto()
             {
                 Category = category,
                 Videos = videos,
                 PlayingVideo = playingVideo,
-                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList()
+                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList(),
+                Brands = popularBrands
             };
             return View(CategoryDto);
         }
@@ -51,17 +53,22 @@ namespace ECommerceLiveDemo.Controllers
         public IActionResult BrandsList(int Id)
         {
             var brand = _brandServices.GetBrandById(Id);
-            //
-            var category = _categoryServices.GetCategoryById(Id);
-            var videos = _videoServices.GetVideosByCategoryId(Id);
+            var videos = _videoServices.GetVideosByBrandId(Id);
             var playingVideo = videos.LastOrDefault();
+            var popularBrands = _brandServices.GetPopularBrands();
+            if (playingVideo == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var CategoryDto = new CategoryDto()
             {
-                Category = category,
+                BrandName = brand.Name,
                 Videos = videos,
                 PlayingVideo = playingVideo,
-                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList()
+                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList(),
+                Brands = popularBrands
             };
+           
             return View(CategoryDto);
         }
     }

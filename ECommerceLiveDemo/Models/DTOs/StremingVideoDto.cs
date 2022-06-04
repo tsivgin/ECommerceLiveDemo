@@ -12,5 +12,7 @@ namespace ECommerceLiveDemo.Models.DTOs
         public List<Category> Categories { get; set; }
         public string VideoDescription { get; set; }
         public List<Video> Videos { get; set; }
+        
+        public List<Brand> Brands { get; set; }
     }
 }

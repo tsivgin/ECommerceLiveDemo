@@ -44,5 +44,9 @@ namespace ECommerceLiveDemo.Services
         {
             return  _context.Brands.FirstOrDefault(i => i.Id == Id);
         }
+        public List<Brand> GetPopularBrands()
+        {
+            return  _context.Brands.Take(4).ToList();
+        }
     }
 }

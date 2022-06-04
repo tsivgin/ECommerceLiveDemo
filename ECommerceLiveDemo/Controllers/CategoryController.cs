@@ -41,12 +41,18 @@ namespace ECommerceLiveDemo.Controllers
             var category = _categoryServices.GetCategoryById(Id);
             var videos = _videoServices.GetVideosByCategoryId(Id);
             var playingVideo = videos.LastOrDefault();
+            var brands = _brandServices.GetPopularBrands();
+            if (playingVideo == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var CategoryDto = new CategoryDto()
             {
                 Category = category,
                 Videos = videos,
                 PlayingVideo = playingVideo,
-                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList()
+                Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList(),
+                Brands = brands
             };
             return View(CategoryDto);
         }

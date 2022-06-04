@@ -47,7 +47,7 @@
                      @Html.Partial("_VideoPlayingPartial",Model)
                   </div>
                                        
-                     @Html.Partial("_VideosPartial")
+                     @Html.Partial("_VideosPartial",Model)
                </div>
             <hr class="mt-0">
             <!-- Videolar Bitiş-->
@@ -55,7 +55,7 @@
                
                <!-- Popular Channel Başlangıç -->
                <div class="video-block section-padding">
-                  @Html.Partial("PartialViewLayout/_PopularChannelsPartial")
+                  @Html.Partial("PartialViewLayout/_PopularChannelsPartial",Model.Brands)
                </div>
                <!-- Popular Kanallar Bitiş-->
             </div>

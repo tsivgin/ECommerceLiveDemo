@@ -42,5 +42,11 @@ namespace ECommerceLiveDemo.Services
             var videos = _context.Videos.Where(i => i.Id == Id).ToList();
             return videos;
         }
+        public List<Video> GetVideosByBrandId(int brandId)
+        {
+            //Buraya bir alan eklenip ona göre çekilmesi gerek Geçici burası
+            var videos = _context.Videos.Where(i => i.VideoBrandMappings.Any(j => j.BrandId == brandId)).ToList();
+            return videos;
+        }
     }
 }

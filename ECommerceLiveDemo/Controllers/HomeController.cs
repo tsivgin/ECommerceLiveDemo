@@ -31,7 +31,7 @@ namespace ECommerceLiveDemo.Controllers
         {
             // var brandsDto = _brandServices.SetBrandsDto();
             var streamingVideoDto = _videoServices.SetStreamingVideoDto();
-            // streamingVideoDto.BrandsDto = brandsDto;
+            streamingVideoDto.Brands = _brandServices.GetPopularBrands();
             
             return View(streamingVideoDto);
         }

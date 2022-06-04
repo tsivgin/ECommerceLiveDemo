@@ -39,7 +39,7 @@
                     
                    
                </div>
-               <h3>@Model.Category.Name</h3>
+               <h3>@Model.BrandName</h3>
             <!-- Videolar Başlangıç -->
                <div class="video-block section-padding">
                   <div class="row">
@@ -54,7 +54,7 @@
                
                <!-- Popular Channel Başlangıç -->
                <div class="video-block section-padding">
-                  @Html.Partial("PartialViewLayout/_PopularChannelsPartial")
+                  @Html.Partial("PartialViewLayout/_PopularChannelsPartial",Model.Brands)
                </div>
                <!-- Popular Kanallar Bitiş-->
             </div>

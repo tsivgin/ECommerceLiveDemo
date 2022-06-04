@@ -9,5 +9,6 @@ namespace ECommerceLiveDemo.Services
         public StremingVideoDto SetStreamingVideoDto();
         public List<Video> GetVideosByCategoryId(int categoryId);
         public List<Video> GetVideosById(int Id);
+        List<Video> GetVideosByBrandId(int brandId);
     }
 }
