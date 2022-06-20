@@ -20,9 +20,9 @@ namespace ECommerceLiveDemo.Models
         public string Password { get; set; }
         [DisplayName("Email")]
         public string Email { get; set; }
-        [DisplayName("İsmi")]
+        [DisplayName("Isim")]
         public string FirstName { get; set; }
-        [DisplayName("Soyİsmi")]
+        [DisplayName("SoyIsım")]
         public string LastName { get; set; }
         [DisplayName("Doğum Tarihi")]
         public DateTime? BirthDate { get; set; }

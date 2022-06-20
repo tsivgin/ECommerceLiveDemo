@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ECommerceLiveDemo.Models;
+using ECommerceLiveDemo.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 
 namespace ECommerceLiveDemo.Areas.Admin.Controlles
 {
@@ -15,10 +18,16 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
     public class BrandsController : Controller
     {
         private readonly SHOPContext _context;
+        private readonly IFileService _fileService;
+        private readonly IUserServices _userServices;
 
-        public BrandsController(SHOPContext context)
+        public BrandsController(SHOPContext context,
+            IFileService fileService,
+            IUserServices userServices)
         {
             _context = context;
+            _fileService = fileService;
+            _userServices = userServices;
         }
 
         // GET: Admin/Brands
@@ -56,15 +65,32 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,SiteUrl,ContactPhone,ContactEmail")] Brand brand)
+        public async Task<IActionResult> Create([Bind("Id,Name,SiteUrl,ContactPhone,Email")] Brand brand,
+            IFormFile file)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid) return View(brand);
+
+            var user = _userServices.GetUser(brand.Email);
+        
+            if ( string.IsNullOrEmpty(file.FileName) || user == null || user.BrandUserMappings.Count != 0)
             {
-                _context.Add(brand);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return View(brand);
             }
-            return View(brand);
+            var path = _fileService.InsertImageForBrands(file, brand.Email);
+            brand.ImageLink = path;
+            _context.Add(brand);
+            await _context.SaveChangesAsync();
+            var brandId = brand.Id;
+            BrandUserMapping brandUserMapping = new BrandUserMapping
+            {
+                Brand = brand,
+                BrandId = brandId,
+                UserId = user?.Id
+            }; 
+            _context.Add(brandUserMapping);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: Admin/Brands/Edit/5
@@ -80,6 +106,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
             {
                 return NotFound();
             }
+
             return View(brand);
         }
 
@@ -113,8 +140,10 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(brand);
         }
 

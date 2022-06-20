@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ECommerceLiveDemo.Migrations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ECommerceLiveDemo.Models;
+using ECommerceLiveDemo.Models.DTOs.AdminDto;
 
 namespace ECommerceLiveDemo.Areas.Admin.Controllers
 {
@@ -54,7 +56,10 @@ namespace ECommerceLiveDemo.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserName,Password,Email,FirstName,LastName,BirthDate,Gender,MobilePhoneNo,CreateDate,UpdateDate,LastSignOnDate")] User user)
+        public async Task<IActionResult> Create(
+            [Bind(
+                "Id,UserName,Password,Email,FirstName,LastName,BirthDate,Gender,MobilePhoneNo,CreateDate,UpdateDate,LastSignOnDate")]
+            User user)
         {
             if (ModelState.IsValid)
             {
@@ -64,6 +69,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(user);
         }
 
@@ -80,6 +86,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
             return View(user);
         }
 
@@ -88,7 +95,10 @@ namespace ECommerceLiveDemo.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserName,Password,Email,FirstName,LastName,BirthDate,Gender,MobilePhoneNo,CreateDate,UpdateDate,LastSignOnDate")] User user)
+        public async Task<IActionResult> Edit(int id,
+            [Bind(
+                "Id,UserName,Password,Email,FirstName,LastName,BirthDate,Gender,MobilePhoneNo,CreateDate,UpdateDate,LastSignOnDate")]
+            User user)
         {
             if (id != user.Id)
             {
@@ -114,10 +124,94 @@ namespace ECommerceLiveDemo.Areas.Admin.Controllers
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(user);
         }
+
+        // GET: Users/AddRole/5
+        public async Task<IActionResult> AddRole(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.Users
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var userRole = _context.UserRoles.ToList();
+            AddUserRoleDto addUserRoleDto = new AddUserRoleDto
+            {
+                UserUserRoleMappings = user.UserUserRoleMappings,
+                UserRoles = userRole,
+                Email = user.Email,
+                Id = user.Id
+            };
+            return View(addUserRoleDto);
+        }
+
+        // POST: Users/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddRole(int id, [Bind("Id,Email")] AddUserRoleDto userRoleDto,
+            string[] selectedRoles)
+        {
+            if (id != userRoleDto.Id)
+            {
+                return NotFound();
+            }
+
+            var user = _context.Users.FirstOrDefault(i => i.Id == id);
+
+            try
+            {
+                var userRoles = user?.UserUserRoleMappings.Select(i => i.UserRole.Name).ToList();
+                foreach (var role in selectedRoles)
+                {
+                    if (userRoles == null || userRoles.Contains(role)) continue;
+                    UserUserRoleMapping userUserRoleMapping = new UserUserRoleMapping
+                    {
+                        UserId = user?.Id,
+                        UserRoleId = _context.UserRoles.FirstOrDefault(i => i.Name == role)?.Id
+                    };
+                    _context.Add(userUserRoleMapping);
+                }
+
+                if (userRoles != null)
+                    foreach (var userRole in userRoles)
+                    {
+                        if (selectedRoles.Contains(userRole)) continue;
+                        var activeUserRole = _context.UserUserRoleMappings.FirstOrDefault(
+                            i => i.UserId == id && i.UserRole.Name == userRole);
+                        if (activeUserRole != null) _context.UserUserRoleMappings.Remove(activeUserRole);
+                    }
+
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UserExists(userRoleDto.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
 
         // GET: Users/Delete/5
         public async Task<IActionResult> Delete(int? id)

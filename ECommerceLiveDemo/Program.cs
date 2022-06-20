@@ -18,7 +18,7 @@ builder.Services.AddScoped<IBrandServices, BrandServices>();
 builder.Services.AddScoped<ICategoryServices, CategoryServices>();
 builder.Services.AddScoped<IVideoServices, VideoServices>();
 builder.Services.AddScoped<IUserServices, UserServices>();
-
+builder.Services.AddScoped<IFileService, FileService>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,

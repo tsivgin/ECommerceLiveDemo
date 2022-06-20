@@ -30,6 +30,7 @@ namespace ECommerceLiveDemo.Models
         public string SecondImageLink { get; set; }
         [DisplayName("Oluşturulma Tarihi")]
         public DateTime? CreatedDate { get; set; }
+        public bool IsYoutubeLink { get; set; }
         public virtual ICollection<VideoCategoryMapping> VideoCategoryMappings { get; set; }
         public virtual ICollection<ProductVideoMapping> ProductVideoMappings { get; set; }
         public virtual ICollection<VideoBrandMapping> VideoBrandMappings { get; set; }

@@ -1,0 +1,54 @@
+@model ECommerceLiveDemo.Models.DTOs.AdminDto.AddUserRoleDto
+
+@{
+    ViewData["Title"] = "Add Role";
+}
+
+<h1>Add Role</h1>
+
+<h4>User</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddRole">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id"/>
+
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" readonly/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            @foreach (var info in Model.UserRoles)
+            {
+                <div class="form-group">
+                    <span>
+                        @if (Model.UserUserRoleMappings.Any(i => i.UserRole.Name == info.Name))
+                        {
+                            <input type="checkbox" class="checkbox" name="selectedRoles" checked value="@info.Name" id="@info.Id"/>
+                            <label asp-for="UserRoles">@info.Name</label>
+                        }
+                        else
+                        {
+                            <input type="checkbox" class="checkbox" name="selectedRoles" value="@info.Name" id="@info.Id"/>
+                            <label asp-for="UserRoles">@info.Name</label>
+                        }
+                    </span>
+                </div>
+            }
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@*@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@

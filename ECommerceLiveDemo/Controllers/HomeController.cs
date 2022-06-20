@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using ECommerceLiveDemo.Models;
@@ -39,6 +41,8 @@ namespace ECommerceLiveDemo.Controllers
         [Route("GetBrands")]
         public IActionResult GetBrands(bool IsBrand)
         {
+            
+            
             var brandsDto = _brandServices.SetBrandsDto();
             if (IsBrand)
             {

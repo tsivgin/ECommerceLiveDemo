@@ -38,7 +38,7 @@ namespace ECommerceLiveDemo.Controllers
                 _categoryServices.GetCategoryById(playingVideo.VideoCategoryMappings.FirstOrDefault().CategoryId.Value);
             var videos = _videoServices.GetVideosByCategoryId(category.Id);
             var popularBrands = _brandServices.GetPopularBrands();
-            var CategoryDto = new CategoryDto()
+            var categoryDto = new CategoryDto()
             {
                 Category = category,
                 Videos = videos,
@@ -46,7 +46,7 @@ namespace ECommerceLiveDemo.Controllers
                 Products = playingVideo?.ProductVideoMappings.Select(i => i.Product).ToList(),
                 Brands = popularBrands
             };
-            return View(CategoryDto);
+            return View(categoryDto);
         }
         
         [Route("Brands/{id?}")]

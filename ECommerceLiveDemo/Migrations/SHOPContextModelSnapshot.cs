@@ -312,6 +312,9 @@ namespace ECommerceLiveDemo.Migrations
                     b.Property<string>("FirstImageLink")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsYoutubeLink")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 

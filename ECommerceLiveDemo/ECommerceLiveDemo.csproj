@@ -30,6 +30,7 @@
     <ItemGroup>
       <Folder Include="Pages" />
       <Folder Include="wwwroot\assets\images\logos" />
+      <Folder Include="wwwroot\images\brands" />
     </ItemGroup>
 
     <ItemGroup>
