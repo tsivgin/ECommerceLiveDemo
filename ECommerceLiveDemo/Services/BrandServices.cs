@@ -24,7 +24,7 @@ namespace ECommerceLiveDemo.Services
                     {
                         Id = brand.Id,
                         ImageLink = brand.ImageLink.Contains("wwwroot") ? 
-                            brand.ImageLink.Substring(brand.ImageLink.IndexOf("wwwroot/")).Replace("wwwroot/", string.Empty)
+                            brand.ImageLink.Substring(brand.ImageLink.LastIndexOf("wwwroot")).Replace("wwwroot/", string.Empty)
                             :brand.ImageLink,
                         Name = brand.Name,
                         IsBrand = brand.IsBrand
