@@ -65,7 +65,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,SiteUrl,ContactPhone,Email")] Brand brand,
+        public async Task<IActionResult> Create([Bind("Id,Name,SiteUrl,ContactPhone,Email,IsBrand")] Brand brand,
             IFormFile file)
         {
             if (!ModelState.IsValid) return View(brand);

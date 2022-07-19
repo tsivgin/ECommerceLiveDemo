@@ -23,7 +23,7 @@ namespace ECommerceLiveDemo.Models
         public string ContactPhone { get; set; }
         [DisplayName("Marka Emaili")]
         public string Email { get; set; }
-        [DisplayName("Marka Mı? Değil Influencer")]
+        [DisplayName("Marka Mı?")]
         public bool IsBrand { get; set; }
         [DisplayName("Resim")]
         public string ImageLink { get; set; }

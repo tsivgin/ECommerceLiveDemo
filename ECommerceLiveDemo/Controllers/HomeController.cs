@@ -41,8 +41,6 @@ namespace ECommerceLiveDemo.Controllers
         [Route("GetBrands")]
         public IActionResult GetBrands(bool IsBrand)
         {
-            
-            
             var brandsDto = _brandServices.SetBrandsDto();
             if (IsBrand)
             {
