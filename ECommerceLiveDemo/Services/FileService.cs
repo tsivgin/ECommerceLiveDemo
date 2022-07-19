@@ -17,7 +17,7 @@ namespace ECommerceLiveDemo.Services
             string path = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/images/brands/{imageName}");
 
             using var stream = new FileStream(path, FileMode.Create);
-            
+            stream.ReadByte();
             file.CopyTo(stream);
             
             return path;
