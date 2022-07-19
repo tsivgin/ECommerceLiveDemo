@@ -18,7 +18,7 @@ namespace ECommerceLiveDemo.Services
 
             using var stream = new FileStream(path, FileMode.Create);
             
-            file.CopyToAsync(stream);
+            file.CopyTo(stream);
             
             return path;
         }
