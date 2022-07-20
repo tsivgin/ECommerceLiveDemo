@@ -7,28 +7,34 @@
 <h1>Create</h1>
 
 <h4>Category</h4>
-<hr />
+<hr/>
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+                <input asp-for="Name" class="form-control"/>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="SystemName" class="control-label"></label>
-                <input asp-for="SystemName" class="form-control" />
+                <input asp-for="SystemName" class="form-control"/>
                 <span asp-validation-for="SystemName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ParentId" class="control-label"></label>
-                <input asp-for="ParentId" class="form-control" />
+                <input asp-for="ParentId" class="form-control"/>
                 <span asp-validation-for="ParentId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <h2 class="text-center lead" style="margin-top:10%"> Resim Yükle</h2>
+                <div class="form-group">
+                    <input type="file" name="file" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary"/>
             </div>
         </form>
     </div>
@@ -37,4 +43,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-

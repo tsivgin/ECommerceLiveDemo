@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ECommerceLiveDemo.Models;
+using ECommerceLiveDemo.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace ECommerceLiveDemo.Areas.Admin.Controlles
 {
@@ -13,10 +15,13 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
     public class CategoriesController : Controller
     {
         private readonly SHOPContext _context;
+        private readonly IFileService _fileService;
 
-        public CategoriesController(SHOPContext context)
+        public CategoriesController(SHOPContext context,
+            IFileService fileService)
         {
             _context = context;
+            _fileService=fileService;
         }
 
         // GET: Categories
@@ -54,14 +59,17 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,SystemName,ParentId")] Category category)
+        public async Task<IActionResult> Create([Bind("Id,Name,SystemName,ParentId")] Category category, IFormFile file)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && file != null)
             {
+                var path = _fileService.InsertImageForCategory(file);
+                category.CategoryPicture = path;
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(category);
         }
 
@@ -78,6 +86,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
             {
                 return NotFound();
             }
+
             return View(category);
         }
 
@@ -111,8 +120,10 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(category);
         }
 

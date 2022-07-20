@@ -171,6 +171,8 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var brand = await _context.Brands.FindAsync(id);
+            var branduser = _context.BrandUserMappings.FirstOrDefault(i=>i.BrandId == id);
+            _context.BrandUserMappings.Remove(branduser);
             _context.Brands.Remove(brand);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

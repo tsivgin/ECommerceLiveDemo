@@ -13,7 +13,7 @@
         <h4 style="text-align:center">Video</h4>
         <hr/>
 
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
@@ -30,6 +30,14 @@
                 <input asp-for="FileUrl" class="form-control"/>
                 <span asp-validation-for="FileUrl" class="text-danger"></span>
             </div>
+            
+            <div class="form-group">
+                <h2 class="text-center lead" style="margin-top:5%"> Video Yükle</h2>
+                <div class="form-group">
+                    <input type="file" name="file" class="form-control"/>
+                </div>
+            </div>
+            
             <div class="form-group">
                 <label asp-for="FirstImageLink" class="control-label"></label>
                 <input asp-for="FirstImageLink" class="form-control"/>

@@ -23,9 +23,7 @@ namespace ECommerceLiveDemo.Services
                 allBrandsDto.Add(new BrandDto
                     {
                         Id = brand.Id,
-                        ImageLink = brand.ImageLink.Contains("wwwroot") ? 
-                            brand.ImageLink.Substring(brand.ImageLink.LastIndexOf("wwwroot")).Replace("wwwroot/", string.Empty)
-                            :brand.ImageLink,
+                        ImageLink = brand.ImageLink,
                         Name = brand.Name,
                         IsBrand = brand.IsBrand
                     }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using ECommerceLiveDemo.Models;
+using ECommerceLiveDemo.Models.DTOs;
 
 namespace ECommerceLiveDemo.Services
 {
@@ -13,10 +14,21 @@ namespace ECommerceLiveDemo.Services
             _context = context;
         }
 
-        public List<Category> GetCategory()
+        public List<CategoryListDto> GetCategory()
         {
-            var category = _context.Categories.ToList();
-            return category;
+            List<CategoryListDto> categoryListDtos = new List<CategoryListDto>();
+            var category = _context.Categories.Where(i=>i.ParentId == 0).ToList();
+            foreach (var item in category)
+            {
+                categoryListDtos.Add(new CategoryListDto
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    CategoryPicture = item.CategoryPicture,
+                    ChildCategory = _context.Categories.Where(i=>i.ParentId== item.Id).ToList()
+                });
+            }
+            return categoryListDtos;
         }
 
         public Category GetCategoryById(int Id)

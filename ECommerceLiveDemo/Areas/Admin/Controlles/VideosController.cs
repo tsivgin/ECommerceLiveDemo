@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ECommerceLiveDemo.Models;
 using ECommerceLiveDemo.Models.DTOs.AdminDto;
+using ECommerceLiveDemo.Services;
+using Microsoft.AspNetCore.Http;
 
 
 namespace ECommerceLiveDemo.Areas.Admin.Controlles
@@ -15,10 +17,13 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
     public class VideosController : Controller
     {
         private readonly SHOPContext _context;
+        private readonly IFileService _fileService;
 
-        public VideosController(SHOPContext context)
+        public VideosController(SHOPContext context,
+            IFileService fileService)
         {
             _context = context;
+            _fileService = fileService;
         }
 
         // GET: Videos
@@ -46,10 +51,16 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
             [Bind("Id,Name,FileName,FileUrl,FirstImageLink,SecondImageLink,Description,CategoryId,BrandId")]
-            CreateVideoDto videoDto)
+            CreateVideoDto videoDto,IFormFile file)
         {
             if (ModelState.IsValid)
             {
+
+                if (file != null)
+                {
+                    var path = _fileService.InsertVideoForBrands(file);
+                    videoDto.FileUrl = path;
+                }
                 Video video = new Video
                 {
                     CreatedDate = DateTime.UtcNow,
