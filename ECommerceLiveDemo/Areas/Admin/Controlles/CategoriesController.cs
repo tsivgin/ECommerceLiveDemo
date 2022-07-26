@@ -61,6 +61,7 @@ namespace ECommerceLiveDemo.Areas.Admin.Controlles
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,SystemName,ParentId")] Category category, IFormFile file)
         {
+            
             if (ModelState.IsValid && file != null)
             {
                 var path = _fileService.InsertImageForCategory(file);
