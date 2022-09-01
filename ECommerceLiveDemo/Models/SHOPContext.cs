@@ -36,7 +36,7 @@ namespace ECommerceLiveDemo.Models
             if (!optionsBuilder.IsConfigured)
             {
                //optionsBuilder.UseSqlServer("Server=localhost;Initial Catalog=SHOP;Integrated Security=True;");
-                optionsBuilder.UseSqlServer(@"Data Source=78.135.83.247,1433;Initial Catalog=SHOPTest;User ID=sa;Password=tolga123;Integrated Security=False;Trusted_Connection=False");
+                optionsBuilder.UseSqlServer(@"Data Source=93.177.103.246,1433;Initial Catalog=SHOPTest;User ID=sa;Password=Tolga123;Integrated Security=False;Trusted_Connection=False");
                 optionsBuilder.UseLazyLoadingProxies();
             }
         }
